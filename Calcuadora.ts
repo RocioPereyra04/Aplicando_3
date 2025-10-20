@@ -1,7 +1,6 @@
 import promptSync from "prompt-sync";
 const prompt = promptSync();
 
-// 🧩 Clase Calculadora
 class Calculadora {
   private num1: number;
   private num2: number;
@@ -32,11 +31,11 @@ class Calculadora {
   }
 }
 
-// 🧠 Programa principal
+
 const num1: number = parseFloat(prompt("Ingrese el primer número: "));
 const num2: number = parseFloat(prompt("Ingrese el segundo número: "));
 
-// Creamos el objeto de la clase Calculadora
+
 const calc = new Calculadora(num1, num2);
 
 // Menú de opciones
@@ -67,7 +66,7 @@ switch (opcion) {
     break;
 }
 
-// Mostrar resultado si existe
+
 if (resultado !== undefined) {
   console.log("El resultado es: " + resultado);
 }
