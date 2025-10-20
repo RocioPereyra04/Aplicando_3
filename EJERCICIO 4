@@ -1,0 +1,15 @@
+En los ejercicios 2 y 3 usé varias ideas de la Programación Orientada a Objetos (POO) para organizar mejor el código y hacerlo más claro.
+Primero, usé encapsulamiento, que básicamente significa juntar los datos y las funciones que los manejan dentro de un mismo “contenedor” llamado clase o constructor.
+En el ejercicio 2, con TypeScript, mi clase Calculadora guarda los números (num1 y num2) y tiene métodos como sumar(), restar() o dividir() que trabajan con esos
+números. Así no tengo que tocar los datos directamente desde fuera, todo pasa por los métodos que definí. En el ejercicio 3, con JavaScript basado en prototipos, 
+el constructor Tarea hace lo mismo: cada tarea tiene su título, descripción, estado y dificultad, y sus métodos (mostrarDetalle, editarTarea) manejan esos datos de 
+manera ordenada.
+También apliqué abstracción, que es como esconder los detalles complicados y mostrar solo lo que hace falta. Por ejemplo, cuando llamo calc.sumar(),
+obtengo el resultado sin tener que preocuparme por cómo se hace la suma por dentro. Lo mismo pasa con tarea.mostrarDetalle(): veo la información completa de la tarea
+sin tener que tocar cada atributo manualmente.
+Otro concepto que usé es la creación de objetos. Cada vez que hago new Calculadora(10, 5) o new Tarea("Estudiar JS", {dificultad: 2}), creo un objeto con su propio 
+estado y métodos. Esto me permite manejar varias calculadoras o tareas diferentes al mismo tiempo, sin que interfieran entre sí.
+Además, el código está modular, porque la calculadora y las tareas están organizadas en unidades separadas que puedo usar y reutilizar en otros programas
+sin tener que reescribir la lógica. Esto ayuda a que todo sea más fácil de leer y mantener.
+No usé herencia ni polimorfismo, porque los programas eran simples y no necesitaba clases hijas ni métodos que cambiaran su comportamiento según la instancia. 
+Todo funcionaba bien con una sola clase o constructor y sus métodos.
